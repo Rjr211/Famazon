@@ -44,12 +44,6 @@ INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity)
 5.99,
 30);
 
-INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
-89123,
-'Womens Bruce Springsteen Baseball T-shirt',
-'Womens Clothing',
-25.99,
-8);
 
 INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
 45678,
