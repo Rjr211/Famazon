@@ -103,5 +103,9 @@ INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
 50000,
 0);
 
+SHOW TABLES;
+CREATE VIEW Famazon.TotalProfits AS SELECT DepartmentId, DepartmentName, OverHeadCosts, TotalSales, TotalSales-OverHeadCosts AS TotalProfit FROM Departments;
+
+
 
 
