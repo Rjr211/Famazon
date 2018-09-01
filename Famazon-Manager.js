@@ -24,3 +24,22 @@ var managerOptions = {
 		},
 	},
 };
+
+//start the prompt
+prompt.start();
+//this prompts the above question and below it states what will be done based on what number the user types
+prompt.get(managerOptions, function(err, res){
+	if(res.mOptions == 1){
+		viewProducts();
+	} else if(res.mOptions == 2){
+		viewInventory();
+	} else if(res.mOptions == 3){
+		addInventory();
+	} else if(res.mOptions ==4){
+		addNewProduct();
+	} else {
+		console.log('You picked an invalid choice.');
+		connection.end();
+	}
+});
+
